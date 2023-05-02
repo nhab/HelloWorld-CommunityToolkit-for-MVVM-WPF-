@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace WpfApp2
@@ -8,18 +9,13 @@ namespace WpfApp2
     public  partial class MainWindowViewModel:ObservableObject
     {
         [ObservableProperty]
-        [NotifyCanExecuteChangedFor(nameof(ClickCommand))]
+       // [NotifyCanExecuteChangedFor(nameof(Click))]
         private string? firstName = "kevin";
 
-        //public IRelayCommand ClickCommand { get; }
-        //public MainWindowViewModel()
-        //{
-        //    ClickCommand = new RelayCommand(OnClick,CanClick);
-        //}
         private bool CanClick() => FirstName == "kevin";
 
         [RelayCommand(CanExecute =nameof(CanClick))]
-        private void Click()
+        private async Task Click()
         {
             FirstName = "Robert";
         }
