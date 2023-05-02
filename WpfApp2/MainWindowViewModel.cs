@@ -8,10 +8,10 @@ namespace WpfApp2
     public  partial class MainWindowViewModel:ObservableObject
     {
         [ObservableProperty]
-       // [NotifyCanExecuteChangedFor(nameof(ClickCommand))]
+        [NotifyCanExecuteChangedFor(nameof(ClickCommand))]
         private string? firstName = "kevin";
 
-        public ICommand ClickCommand { get; }
+        public IRelayCommand ClickCommand { get; }
         public MainWindowViewModel()
         {
             ClickCommand = new RelayCommand(OnClick,CanClick);
