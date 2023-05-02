@@ -5,5 +5,5 @@ The very basic program to show how to use command in Microsoft CommunityToolkit 
 
 https://www.youtube.com/watch?v=uVIzK2snugk
 
-[https://devblogs.microsoft.com/dotnet/announcing-the-dotnet-community-toolkit-800/](Announcing .NET Community Toolkit 8.0! MVVM)
+[Announcing .NET Community Toolkit 8.0! MVVM](https://devblogs.microsoft.com/dotnet/announcing-the-dotnet-community-toolkit-800/)
 
