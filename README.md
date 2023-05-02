@@ -3,7 +3,7 @@ The very basic program to show how to use command in Microsoft CommunityToolkit 
 
 **Based on:**
 
-https://www.youtube.com/watch?v=uVIzK2snugk
+[C#/WPF - Learn MVVM with the .NET Community Toolkit on youtube](https://www.youtube.com/watch?v=uVIzK2snugk)
 
 [Announcing .NET Community Toolkit 8.0! MVVM](https://devblogs.microsoft.com/dotnet/announcing-the-dotnet-community-toolkit-800/)
 
