@@ -11,15 +11,15 @@ namespace WpfApp2
         [NotifyCanExecuteChangedFor(nameof(ClickCommand))]
         private string? firstName = "kevin";
 
-        public IRelayCommand ClickCommand { get; }
-        public MainWindowViewModel()
-        {
-            ClickCommand = new RelayCommand(OnClick,CanClick);
-        }
+        //public IRelayCommand ClickCommand { get; }
+        //public MainWindowViewModel()
+        //{
+        //    ClickCommand = new RelayCommand(OnClick,CanClick);
+        //}
         private bool CanClick() => FirstName == "kevin";
 
-       
-        private void OnClick()
+        [RelayCommand(CanExecute =nameof(CanClick))]
+        private void Click()
         {
             FirstName = "Robert";
         }
